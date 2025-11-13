@@ -144,10 +144,13 @@ img{/*レスポンシブの時はほとんど指定する*/
 .fv{
     height: 100vh;
     min-height: 550px;
-    position: relative; /**/
-    background-image: url(../img/fv-bgi_01@2x.jpg);
+    position: relative; 
     background-size: cover;
     background-position: center;
+}
+.fv img{/*スリックで流れる画像の大きさについてブラウザの大きさ変えたときいい感じになる*/
+    height: 100vh;
+    object-fit: cover;
 }
 .main-copy{
     position: absolute;
@@ -163,6 +166,10 @@ img{/*レスポンシブの時はほとんど指定する*/
 .jp-copy{
     font-size: 4rem;
     text-align: center;
+}
+
+.slick-arrow{/*ボタンを消す*/
+    display: none !important;
 }
 
 /*---------------------------*/

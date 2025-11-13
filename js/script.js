@@ -21,5 +21,9 @@ $(function(){
 
 //スライダー
  $('.slider').slick({
-
+    autoplay: true,
+    autoplaySpeed: 2000,//2秒
+    fade: true,
+    speed: 1000,//フェードスピード
+    cssEase: 'linear'
   });
