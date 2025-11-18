@@ -150,6 +150,7 @@ img{/*レスポンシブの時はほとんど指定する*/
 }
 .fv img{/*スリックで流れる画像の大きさについてブラウザの大きさ変えたときいい感じになる*/
     height: 100vh;
+    min-height: 550px;
     object-fit: cover;
 }
 .main-copy{
@@ -354,11 +355,30 @@ img{/*レスポンシブの時はほとんど指定する*/
     height: 3px;
     width: 30px;
     background-color: #fff;
+    transition:  .3s;
 }
 .bar_top,
 .bar_mid{
     margin-bottom: 8px;
 }
+
+.burger-btn.cross .bar_top{/*forハンバーガー*/
+    transform: rotate(45deg) translate(8px,8px);
+    transition:  .3s;
+}
+.burger-btn.cross .bar_mid{/*forハンバーガー*/
+    opacity: 0;
+    transition:  .3s;
+
+}
+.burger-btn.cross .bar_bottom{/*forハンバーガー*/
+    transform: rotate(-45deg) translate(8px,-8px);
+    transition:  .3s;
+}
+body.noscroll{/*script*/
+    overflow: hidden;
+}
+
 button{/*???*/
     background-color: transparent;
     border: none;
