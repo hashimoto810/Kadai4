@@ -368,7 +368,7 @@ img{/*レスポンシブの時はほとんど指定する*/
 }
 .burger-btn.cross .bar_mid{/*forハンバーガー*/
     opacity: 0;
-    transition:  .3s;
+    transition:  .3s;/*変化をなめらかにする*/
 
 }
 .burger-btn.cross .bar_bottom{/*forハンバーガー*/

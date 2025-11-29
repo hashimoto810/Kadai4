@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type ="text/css" href="./css/reset.css"> 
-    <link rel="stylesheet" type ="text/css" href="./css/slick.css"/>
+    <link rel="stylesheet" type ="text/css" href="../css/reset.css"> 
+    <link rel="stylesheet" type ="text/css" href="../css/slick.css"/>
     <link rel="stylesheet" href ="../css/contact.css"><!--リセットCSS→CSS --> 
 </head>
 <body>
@@ -23,7 +23,7 @@
                 <li class="nav-item"><a href="#!">Concept</a></li>
                 <li class="nav-item"><a href="#!">Service</a></li>
                 <li class="nav-item"><a href="#!">Works</a></li>
-                <li class="nav-item"><a href="./index.html">Contact</a></li>
+                <li class="nav-item"><a href="../index.html">Contact</a></li>
             </ul>
         </nav>
         <button class="burger-btn">
@@ -44,8 +44,48 @@
     </div>
         <!--//page-title --> 
 
-    <form action="">
+    <!--form -->
+    <form action="" class="form-wrapper">
+        <ul class="form-list">
+            <li class="form-item">
+                <label for="" class="form-label">お問い合わせ内容</label>
+                <ul class="checkbox-list">
+                    <li class="checkbox-item">
+                        <input type="checkbox" class="checkbox" id="document">
+                        <label for="document">資料請求</label>
+                    </li>
+                    <li class="checkbox-item">
+                        <input type="checkbox" class="checkbox" id="phone">
+                       <label for="phone">お電話でのご相談</label>
+                    </li>
+                    <li class="checkbox-item">
+                        <input type="checkbox" class="checkbox" id="application">
+                        <label for="application">申し込み</label>
+                    </li>
+                </ul>
+                
+                
+            </li>
+            <li class="form-item">
+                <label for="" class="form-label">担当者名</label>
+                <input type="text" class="input-text">
+            </li>
+            <li class="form-item">
+                <label for="" class="form-label">電話番号</label>
+                <input type="text" class="input-text">
+            </li>
+            <li class="form-item">
+                <label for="" class="form-label">メールアドレス</label>
+                <input type="text" class="input-text">
+            </li>
+            <li class="form-item">
+                <label for="" class="form-label">その他</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </li>
+        </ul>
+        <input type="submit" value="Submit" class="submit-btn">
     </form>
+    <!--//form -->
 
 </main>
 <!--//main -->  
@@ -56,7 +96,8 @@
 <!-- //footer-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="js/script.js"></script>
+<script type="text/javascript" src="../js/slick.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
 
